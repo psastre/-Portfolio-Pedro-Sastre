@@ -16,10 +16,17 @@ import {animate} from "../../utils/animate"
 import {useEffect} from "react";
 
 const About = () => {
+
+
   useEffect(()=>{
     animate()
-    
   },[])
+
+ 
+   
+  
+  
+  
   return (
     <section id='about'>
       <h5>Get To Know</h5>
@@ -28,7 +35,7 @@ const About = () => {
         <div className="about__me">
           <div className="about__me-image">
             <div className="about__me-image-center">
-              <img src={ME} alt="About Image" />
+              {/*<img src={ME} alt="About Image" />*/}
             </div>
             <div className="about__me-image-text">
               <p>Pedro Sastre - Full Stack Dev - </p>

@@ -4,6 +4,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 export function animate(){
+    var textImg = document.querySelector('.about__me-image-text p');
+    textImg.innerHTML = textImg.innerText.split("").map((char, i)=> `<span style="transform:rotate(${i*7}deg)">${char}</span>`).join("");
+      
+  
     console.log(3)
     const aboutImg = document.querySelector(".about__me")
     gsap.to(aboutImg,{
