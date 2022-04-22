@@ -64,12 +64,63 @@ export function init() {
         var mquerie = window.matchMedia("(max-width: 600px)")
         function mediaQuerieFunction(mquerie) {
             if (mquerie.matches) { 
+               
                 gsap.to(model.position,{
                     delay:1,
                     position:1,
                     duration:3,
                     x:0,
                 })
+                gsap.to(model.scale,{
+                    delay:1,
+                    duration:1,
+                    x:2,
+                    y:2,
+                    z:2})
+              
+                gsap.fromTo(model.scale,{
+                        delay:1,
+                        duration:1,
+                        
+                        x:2,
+                        y:2,
+                        z:2},{
+                        delay:1,
+                        duration:1,
+                            
+                        x:0.85,
+                        y:0.85,
+                        z:0.85,
+                        scrollTrigger:{
+                            trigger:"#about",
+                            start:"top 80%",
+                            end:"top 20%",
+                            scrub:"true",
+                        
+                        }
+                        }
+                    ) 
+                    gsap.fromTo(camera.position,{
+                        delay:1,
+                        duration:1,
+                        y:0,
+                    },{
+                        delay:1,
+                        duration:1,
+                        y:-1,
+                        
+                        scrollTrigger:{
+                            trigger:"#about",
+                            start:"top 10%",
+                            end:"top -85%",
+                            scrub:"true"
+                            
+                          
+                        }
+                        }
+                    )
+
+                    
             } else {
                 
                 gsap.fromTo(model.position,{
@@ -90,7 +141,7 @@ export function init() {
                     delay:1,
                     position:1,
                     duration:3,
-                    x:-0.8,
+                    x:-0.7,
                     scrollTrigger:{
                         trigger:"#about",
                         start:"top 80%",
@@ -134,7 +185,7 @@ export function init() {
                     scrollTrigger:{
                         trigger:"#projects",
                         start:"top 115%",
-                        end:"top 45%",
+                        end:"top 5%",
                         scrub:"true"
                       
                     }
@@ -158,13 +209,13 @@ export function init() {
         gsap.timeline({repeat:-1})
         .to(model.position,{
             duration:0.25,
-            y:0.15})
+            y:0.14})
         .to(model.position,{
             duration:0.25,
-            y:0.16})
+            y:0.15})
             .to(model.position,{
                 duration:0.25,
-                y:0.15})
+                y:0.14})
         
         
         boton.onclick = function(){

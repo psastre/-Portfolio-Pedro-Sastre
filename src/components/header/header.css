@@ -92,6 +92,7 @@ canvas{
     top: 0;
     left: 0;
     z-index: -1;
+    
 }
 
 /*=====MEDIA QUERIES (MEDIUM DEVICES)======*/
@@ -126,6 +127,12 @@ canvas{
     .header__socials{
         display: none;
     }
+    .scroll__down{
+        right: 7.699999999999999rem;
+        bottom: 9rem;
+        transform: rotate(0deg);
+    }
+    
     
     
 }

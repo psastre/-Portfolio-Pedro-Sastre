@@ -9,10 +9,10 @@ import animate from "../../utils/animate"
 
 
 const Header = () => {
-  useEffect(()=>{
+  /*useEffect(()=>{
     init()
     
-  },[])
+  },[])*/
   
   return (
     <header>

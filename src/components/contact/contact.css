@@ -1,8 +1,11 @@
+
+
 .container.contact__container{
     width: 58%;
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%;
+   
 }
 
 .contact__options{
@@ -65,8 +68,30 @@ input, textarea{
 }
 
 @media screen and (max-width:600px){
+    #about{
+        height: max-content;
+    }
+    .about__me{
+        margin-bottom: 2rem;
+    }
+    .about__card {
+        padding: 1rem;
+        margin-top: 2rem;
+        
+    }
     .container.contact__container{
         grid-template-columns: 1fr;
         width: var(--container-width-sm);
     } 
+    #contact{
+        height: max-content;
+    margin-bottom: 149px;
+    }
+    form{
+        align-items: center;
+    }
+    .btn-form{
+        width: 100%;
+        padding: 1rem 0;
+    }
 }
