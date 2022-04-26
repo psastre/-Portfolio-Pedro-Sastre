@@ -207,11 +207,11 @@ export function init() {
             y:0.15
         })*/
         gsap.timeline({repeat:-1})
-        .to(model.position,{
-            duration:0.25,
+        .from(model.position,{
+            duration:0.35,
             y:0.14})
         .to(model.position,{
-            duration:0.25,
+            duration:0.35,
             y:0.15})
             .to(model.position,{
                 duration:0.25,
