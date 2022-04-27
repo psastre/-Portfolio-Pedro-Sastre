@@ -10,10 +10,11 @@ import animate from "../../utils/animate"
 
 const Header = () => {
   useEffect(()=>{
-    init()
+    animate()
+    setTimeout(init,1300)
     
   },[])
-  
+ 
   return (
     <header>
       <div className="dialog-line"></div>

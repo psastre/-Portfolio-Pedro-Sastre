@@ -87,7 +87,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     opacity: 0;
-    transform: translate(20px);
+    /*transform: translateY(20px);*/
 }
 
 .about__card{
@@ -112,6 +112,8 @@
 .about__content p{
     color: var(--color-light);
     margin: 2rem 0 2.6rem;
+    opacity: 0;
+    transform: translateY(40px);
 
 }
 

@@ -3,12 +3,93 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 
-export function animate(){
+export default function animate(){
     var textImg = document.querySelector('.about__me-image-text p');
     textImg.innerHTML = textImg.innerText.split("").map((char, i)=> `<span style="transform:rotate(${i*11}deg)">${char}</span>`).join("");
       
   
-    console.log(3)
+    const aboutCards = document.querySelector(".about__cards");
+    gsap.to(aboutCards, {
+        ease:"none",
+        duration: 0.5,
+        opacity:1,
+        scrollTrigger:{
+            trigger:"#about",
+            start:"top 20%",
+            
+            }
+    })
+    gsap.to(".about__content p", {
+        ease:"none",
+        duration: 0.8,
+        opacity:1,
+        y:0,
+        scrollTrigger:{
+            trigger:"#about",
+            start:"top 30%",
+            
+            }
+    })
+    gsap.to("#about h2", {
+        duration: 2.5,
+        height:"50px",
+        ease: "power4",
+        y:0,
+        scrollTrigger:{
+            trigger:"#about",
+            start:"top 65%",
+            
+            }
+        
+      });
+    gsap.to("#projects h2", {
+        duration: 1.5,
+        height:"50px",
+        ease: "power4",
+        y:0,
+        scrollTrigger:{
+            trigger:"#projects",
+            start:"top 65%",
+            
+            }
+        
+      });
+    gsap.to(".projects__item", {
+        duration: 2.5,
+        opacity:1,
+        ease: "power4",
+        y:0,
+        scrollTrigger:{
+            trigger:"#projects",
+            start:"top 45%",
+            
+            }
+        
+      });
+    gsap.to(".contact__container", {
+        duration: 2.5,
+        opacity:1,
+        ease: "power4",
+        y:0,
+        scrollTrigger:{
+            trigger:"#contact",
+            start:"top 45%",
+            
+            }
+        
+      });
+    gsap.to("#contact h2", {
+        duration: 1.5,
+        height:"50px",
+        ease: "power4",
+        y:0,
+        scrollTrigger:{
+            trigger:"#contact",
+            start:"top 65%",
+            
+            }
+        
+      });
     const aboutImg = document.querySelector(".about__me")
     gsap.to(aboutImg,{
         
@@ -20,13 +101,11 @@ export function animate(){
             start:"top 20%",
             end:"top 0%",
             scrub:"true",
-           
-          
-        }
-        }
-    )
+            }
+        })
+    
 
-}
+
 
 gsap.from(".header__socials", {opacity: 0, y: 100, duration: 0.5,delay:0.5});
 gsap.from(".scroll__down", {opacity: 0, y: 100, duration: 0.5});
@@ -36,58 +115,9 @@ gsap.from(".cta", {opacity: 0, x: -100, duration: 1, delay:0.5});
 gsap.from("nav", {opacity: 0, y: 100, duration: 1, delay:0.5});
 
 
-/*gsap.timeline({
-    scrollTrigger:{
-        trigger:"#about",
-        start:"top 80%",
-        
-        markers:true
-    }
-    })
-    .from(".about__cards",{
-        opacity: 0, y: 100, duration: 1, delay:0.5,})
-*/
 
 
-/*gsap.to(".",{
-        
-    ease:"none",
-    
-    opacity:1,
-    scrollTrigger:{
-        trigger:"#about",
-        start:"top 20%",
-        end:"top 0%",
-        scrub:"true",
-       
-      
-    }
-    }
-)
-*/
-;;;;;
+}
 
-/*gsap.fromTo(".header__title",{
-    x:-100,
-    opacity:0, 
-    display:"none",
-    
-} , {
-    x:0,
-    opacity:1,
-    display:"block",
-    duration:1.5})
-
-
-gsap.to(".cta",{
-    x:250,
-    duration:1,
-    scrollTrigger:{
-        trigger:".scroll__down",
-        start:"top 30%",
-        end: "top 10%",
-       
-    }
-})*/
 
 

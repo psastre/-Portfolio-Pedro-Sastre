@@ -14,6 +14,8 @@
     border:1px solid transparent;
     border-color: #272627;
     transition: var(--transition);
+    opacity: 0;
+    transform: translateY(20);
 }
 
 .projects__item:hover{

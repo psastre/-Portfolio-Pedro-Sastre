@@ -11,18 +11,14 @@ import {SiMysql} from 'react-icons/si'
 import {SiGreensock} from 'react-icons/si'
 import {SiThreedotjs} from 'react-icons/si'
 
-import {animate} from "../../utils/animate"
+import animate from "../../utils/animate"
 
 import {useEffect} from "react";
 
 const About = () => {
 
 
-  useEffect(()=>{
-    animate()
-  },[])
-
- 
+  
    
   
   

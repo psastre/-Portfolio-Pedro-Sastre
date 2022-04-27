@@ -54,7 +54,7 @@ export function init() {
         
        
 
-        gsap.to(model.position,{
+        gsap.from(model.position,{
                   
             x:2.56
             })
@@ -127,7 +127,7 @@ export function init() {
                     x:2
                 },{
                   
-                    delay:1,
+                    
                     position:1,
                     duration:3,
                     x:0.56,

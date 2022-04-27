@@ -5,6 +5,8 @@
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%;
+    opacity: 0;
+    transform: translateY(20);
    
 }
 
