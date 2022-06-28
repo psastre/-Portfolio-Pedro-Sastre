@@ -25,17 +25,28 @@
     
     border-color: #272627;;
     background: transparent;
+    padding:1.3rem 0.9rem;
 }
 
 .projects__item-image{
     border-radius: 1.5rem;
     overflow: hidden;
 }
+.projects__item-image img{
+    height: 230px;
+}
 
 .projects__item h3 {
-    margin: 1.2rem 0 2rem;
+    
     text-align: center;
     margin-top: 2rem;
+}
+.projects__item p{
+    margin: 0.5rem 0 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: rgba(240, 248, 255, 0.5);
 }
 
 .projects__item-cta{

@@ -62,7 +62,7 @@ const About = () => {
               
             </article>
           </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae deserunt nemo modi sint? Autem consequuntur quisquam possimus vel ipsam dicta, cum, perferendis consequatur sunt nihil eveniet fugit repudiandae ad inventore.</p>
+            <p> Looking forward for a challenging job, that encourages me to learn something new every day and a team that helps me implement all that new knowledge, to develop in my career the ability of working with several technological tools and find the best way of combining them in each project.</p>
         </div>
       </div>
     </section>

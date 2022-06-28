@@ -5,6 +5,10 @@ import { BsTwitter } from 'react-icons/bs'
 
 
 const Contact = () => {
+  const copyMail =()=>{
+    navigator.clipboard.writeText("pedro2000sastre@gmail.com");
+    document.querySelector(".copied").className='copied-open';
+  }
   return (
     <section id='contact'>
     <h5>Get in Touch</h5>
@@ -16,8 +20,8 @@ const Contact = () => {
           <MdOutlineEmail className='contact__option-icon'/>
           <h4>Email</h4>
           <h5>pedro2000sastre@gmail.com</h5>
-          <a href="mailto:pedro2000sastre@gmail.com" target="_blank">Send a message</a>
-        
+          <a   onClick={copyMail}>Copy Mail</a><br/>
+          <span className='copied'>copied</span>
         </article>
         <article className='contact__option'>
           <BsTwitter className='contact__option-icon' />
@@ -28,11 +32,14 @@ const Contact = () => {
         </article>
       </div>
       {/*END OF CONTACT OPTION*/}
-      <form action="">
+      <form action="https://formsubmit.co/pedro2000sastre@gmail.com" method="POST">
         <input type="text" name="name" placeholder='Your Full Name' required />
         <input type="email" name='email' placeholder='YourEmail' required />
         <textarea name="message"  rows="7" placeholder='Your Message' required></textarea>
-        <button type='sibmit' className='btn-form btn btn-primary '>Send Message</button>
+
+        <input type="hidden" name="_captcha" value="false"></input>
+        <input type="hidden" name="_next" value="https://pedro-sastre.web.app/#contact"></input>
+        <button type='submit' className='btn-form btn btn-primary '>Send Message.</button>
       </form>
         </div>
     </section>

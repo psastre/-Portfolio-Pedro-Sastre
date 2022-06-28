@@ -36,10 +36,29 @@
     margin-bottom: 0.5rem;
 }
 
-.contact-option a{
+.contact__option a{
     margin-top: 0.7rem;
     display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.copied{
+   opacity: 0;
+   transform: translateY(-15px);
+ 
+   
+}
+.copied-open{
+    display: inline-block;
+    opacity: 1;
+    margin-top: 0.7rem;
     font-size: 0.8rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color:rgb(34, 42, 42);
+    border-radius: 5px;
+    transform: translateY(0px);
+    transition:all 0.5s;
 }
 
 /*================ FORM =================*/
